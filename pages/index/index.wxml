@@ -1,0 +1,96 @@
+<view class="root">
+  <!-- 标签栏的页签 固定高度-->
+  <view class="tabs">
+    <view class="item">
+    <!-- <navigator redirect(true/false表示是否有返回按钮) url="../logs/logs">跳转功能 -->
+    <navigator redirect="false"  url="../logs/logs?name=gexing">
+      <text>个性推荐</text>
+    </navigator>
+    </view>
+    <view class="item">
+        <text>歌单</text>
+    </view>
+    <view class="item">
+        <text>主播电台</text>
+    </view>
+    <view class="item">
+        <text>排行榜</text>
+    </view>
+  </view>
+  <!-- 内容区域 比例变化高度-->
+  <scroll-view class="content" scroll-y>
+    <!-- 轮播图区域 -->
+    <view class="carousel" >
+      <swiper 
+      indicator-dots="true" 
+      indicator-active-color="#9b0404" 
+      style="height:130px;"
+      >
+        <swiper-item>
+         <image src="../../images/images/01.gif"></image>
+        </swiper-item>
+        <swiper-item>
+         <image src="../../images/07.png"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="portals">
+      <view class="item">
+        <image src="../../images/images/02.gif"></image>
+      </view>
+      <view class="item">
+        <image src="../../images/images/03.gif"></image>
+      </view>
+      <view class="item">
+        <image src="../../images/images/04.gif"></image>
+      </view>
+      <view class="item">
+        <image src="../../images/images/05.gif"></image>
+      </view>
+    </view>
+    <view class="lists">
+      <view class="title"><text>>>推荐歌单</text></view>
+      <view class="inner">
+        <view class="item">
+          <image src="../../images/images/06.gif"></image>
+          <text>再坚持一下，这世间的美好都在等你</text>
+        </view>
+        <view class="item">
+          <image src="../../images/images/07.gif"></image>
+          <text>中国民谣不完全编年史</text>
+        </view>
+        <view class="item">
+          <image src="../../images/images/08.gif"></image>
+          <text>「欧美」收录各种好听滴英文歌</text>
+        </view>
+        <view class="item">
+          <image src="../../images/images/06.gif"></image>
+          <text>再坚持一下，这世间的美好都在等你</text>
+        </view>
+        <view class="item">
+          <image src="../../images/images/07.gif"></image>
+          <text>中国民谣不完全编年史</text>
+        </view>
+        <view class="item">
+          <image src="../../images/images/08.gif"></image>
+          <text>「欧美」收录各种好听滴英文歌</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 播放控制条 -->
+  <view class="player">
+    <view class="poster">
+      <image src="../../images/06.png"></image>
+    </view>
+    <view class="info">
+      <text class="title">一生最爱</text>
+      <text>谭咏麟</text>
+    </view>
+    <view class="controls">
+      <image src="../../images/01.png"></image>
+      <image src="../../images/03.png"></image>
+      <image src="../../images/02.png"></image>
+    </view>
+  </view>
+</view>

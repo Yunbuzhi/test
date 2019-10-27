@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view>
+  <view><text>个性推荐</text></view>
+  <view><button type="primary" bindtap="tapHandle">点我</button></view>
+  
+</view>
